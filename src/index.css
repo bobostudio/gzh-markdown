@@ -1,0 +1,382 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 微信公众号样式优化 */
+.markdown-preview {
+  /* 确保在微信公众号中的字体显示 */
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei UI", "Microsoft YaHei", Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.markdown-preview h1,
+.markdown-preview h2,
+.markdown-preview h3,
+.markdown-preview h4,
+.markdown-preview h5,
+.markdown-preview h6 {
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-preview h1 {
+  font-size: 1.8em;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.3em;
+}
+
+.markdown-preview h2 {
+  font-size: 1.5em;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.3em;
+}
+
+.markdown-preview h3 {
+  font-size: 1.3em;
+}
+
+.markdown-preview p {
+  margin-bottom: 1em;
+  text-align: justify;
+}
+
+.markdown-preview blockquote {
+  border-left: 4px solid #ddd;
+  padding-left: 1em;
+  margin: 1em 0;
+  color: #666;
+  background-color: #f9f9f9;
+  padding: 0.8em 1em;
+  border-radius: 4px;
+}
+
+.markdown-preview code {
+  background-color: #f1f1f1;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 0.9em;
+}
+
+.markdown-preview pre {
+  background-color: #f6f8fa;
+  border-radius: 6px;
+  padding: 1em;
+  overflow-x: auto;
+  margin: 1em 0;
+}
+
+.markdown-preview pre code {
+  background-color: transparent;
+  padding: 0;
+}
+
+.markdown-preview ul,
+.markdown-preview ol {
+  margin: 1em 0;
+  padding-left: 2em;
+}
+
+.markdown-preview li {
+  margin-bottom: 0.5em;
+}
+
+.markdown-preview img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1em auto;
+  border-radius: 4px;
+}
+
+.markdown-preview hr {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 2em 0;
+}
+
+.markdown-preview table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1em 0;
+}
+
+.markdown-preview th,
+.markdown-preview td {
+  border: 1px solid #ddd;
+  padding: 0.5em 1em;
+  text-align: left;
+}
+
+.markdown-preview th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+
+/* 微信公众号样式主题 */
+.theme-wechat {
+  --primary-color: #07C160;
+  --secondary-color: #576B95;
+  --accent-color: #FA9D3B;
+  --text-color: #333;
+  --bg-color: #fff;
+  --bg-secondary: #f9f9f9;
+  --code-bg: #f5f5f5;
+  --code-color: #e74c3c;
+  --pre-bg: #2d3748;
+  --pre-color: #e2e8f0;
+  --border-color: #e5e5e5;
+}
+
+.theme-elegant {
+  --primary-color: #8B5CF6;
+  --secondary-color: #A78BFA;
+  --accent-color: #C4B5FD;
+  --text-color: #374151;
+  --bg-color: #F9FAFB;
+  --bg-secondary: #F3F4F6;
+  --code-bg: #F9FAFB;
+  --code-color: #DC2626;
+  --pre-bg: #1F2937;
+  --pre-color: #F9FAFB;
+  --border-color: #E5E7EB;
+}
+
+.theme-tech {
+  --primary-color: #3B82F6;
+  --secondary-color: #60A5FA;
+  --accent-color: #93C5FD;
+  --text-color: #1F2937;
+  --bg-color: #F8FAFC;
+  --bg-secondary: #F0F9FF;
+  --code-bg: #EFF6FF;
+  --code-color: #DC2626;
+  --pre-bg: #0F172A;
+  --pre-color: #E2E8F0;
+  --border-color: #E2E8F0;
+}
+
+.theme-minimal {
+  --primary-color: #6B7280;
+  --secondary-color: #9CA3AF;
+  --accent-color: #D1D5DB;
+  --text-color: #374151;
+  --bg-color: #FFFFFF;
+  --bg-secondary: #F9FAFB;
+  --code-bg: #F3F4F6;
+  --code-color: #6B7280;
+  --pre-bg: #374151;
+  --pre-color: #F9FAFB;
+  --border-color: #E5E7EB;
+}
+
+.theme-claude {
+  --primary-color: #D97706;
+  --secondary-color: #F59E0B;
+  --accent-color: #FCD34D;
+  --text-color: #1F2937;
+  --bg-color: #FFFBEB;
+  --bg-secondary: #FEF3C7;
+  --code-bg: #FEF3C7;
+  --code-color: #92400E;
+  --pre-bg: #1F2937;
+  --pre-color: #F9FAFB;
+  --border-color: #F59E0B;
+}
+
+/* Markdown 预览样式 */
+.markdown-preview {
+  font-family: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif;
+  line-height: 1.75;
+  color: var(--text-color, #333);
+  background-color: var(--bg-color, #fff);
+}
+
+.markdown-preview h1,
+.markdown-preview h2,
+.markdown-preview h3,
+.markdown-preview h4,
+.markdown-preview h5,
+.markdown-preview h6 {
+  color: var(--primary-color, #07C160);
+  font-weight: 600;
+  margin: 1.5em 0 0.8em 0;
+  line-height: 1.4;
+}
+
+.markdown-preview h1 {
+  font-size: 1.8em;
+  border-bottom: 2px solid var(--primary-color, #07C160);
+  padding-bottom: 0.3em;
+}
+
+.markdown-preview h2 {
+  font-size: 1.5em;
+  border-left: 4px solid var(--primary-color, #07C160);
+  padding-left: 0.8em;
+}
+
+.markdown-preview h3 {
+  font-size: 1.3em;
+}
+
+.markdown-preview p {
+  margin: 1em 0;
+  text-align: justify;
+}
+
+.markdown-preview blockquote {
+  border-left: 4px solid var(--accent-color, #FA9D3B);
+  background-color: var(--bg-secondary, #f9f9f9);
+  padding: 1em 1.2em;
+  margin: 1.5em 0;
+  border-radius: 0 4px 4px 0;
+}
+
+.markdown-preview blockquote p {
+  margin: 0;
+  color: var(--secondary-color, #576B95);
+  font-style: italic;
+}
+
+.markdown-preview code {
+  background-color: var(--code-bg, #f5f5f5);
+  color: var(--code-color, #e74c3c);
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+  font-size: 0.9em;
+}
+
+.markdown-preview pre {
+  background-color: var(--pre-bg, #2d3748);
+  color: var(--pre-color, #e2e8f0);
+  padding: 1.2em;
+  border-radius: 6px;
+  overflow-x: auto;
+  margin: 1.5em 0;
+}
+
+.markdown-preview pre code {
+  background: none;
+  color: inherit;
+  padding: 0;
+  font-size: 0.9em;
+}
+
+.markdown-preview ul,
+.markdown-preview ol {
+  padding-left: 2em;
+  margin: 1em 0;
+}
+
+.markdown-preview li {
+  margin: 0.5em 0;
+  line-height: 1.6;
+}
+
+.markdown-preview ul li {
+  list-style-type: none;
+  position: relative;
+}
+
+.markdown-preview ul li::before {
+  content: "•";
+  color: var(--primary-color, #07C160);
+  font-weight: bold;
+  position: absolute;
+  left: -1em;
+}
+
+.markdown-preview ol li {
+  list-style-type: decimal;
+  color: var(--text-color, #333);
+}
+
+.markdown-preview table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5em 0;
+  border: 1px solid var(--border-color, #e5e5e5);
+}
+
+.markdown-preview th,
+.markdown-preview td {
+  border: 1px solid var(--border-color, #e5e5e5);
+  padding: 0.8em 1em;
+  text-align: left;
+}
+
+.markdown-preview th {
+  background-color: var(--primary-color, #07C160);
+  color: white;
+  font-weight: 600;
+}
+
+.markdown-preview tr:nth-child(even) {
+  background-color: var(--bg-secondary, #f9f9f9);
+}
+
+.markdown-preview img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin: 1em 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.markdown-preview hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, transparent, var(--primary-color, #07C160), transparent);
+  margin: 2em 0;
+}
+
+.markdown-preview a {
+  color: var(--primary-color, #07C160);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom-color 0.2s;
+}
+
+.markdown-preview a:hover {
+  border-bottom-color: var(--primary-color, #07C160);
+}
+
+.markdown-preview strong {
+  color: var(--primary-color, #07C160);
+  font-weight: 600;
+}
+
+.markdown-preview em {
+  color: var(--secondary-color, #576B95);
+  font-style: italic;
+}
+
+/* 高亮代码样式 */
+.hljs {
+  background: var(--pre-bg) !important;
+  color: var(--pre-color) !important;
+}
+
+/* 自定义滚动条 */
+.markdown-preview::-webkit-scrollbar {
+  width: 6px;
+}
+
+.markdown-preview::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.markdown-preview::-webkit-scrollbar-thumb {
+  background: var(--primary-color, #07C160);
+  border-radius: 3px;
+}
+
+.markdown-preview::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-color, #576B95);
+}
