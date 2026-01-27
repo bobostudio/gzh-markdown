@@ -222,7 +222,7 @@ function App() {
                         scale: 2,
                         useCORS: true,
                         allowTaint: true,
-                        backgroundColor: "#FFFEF9",
+                        backgroundColor: "#fbf9f6",
                         width: previewElement.scrollWidth,
                         height: previewElement.scrollHeight,
                         windowWidth: previewElement.scrollWidth,
@@ -261,12 +261,7 @@ function App() {
                       const success = document.execCommand("copy");
                       selection.removeAllRanges();
                       if (success) {
-                        alert(`内容已复制到剪贴板！
-
-使用方法：
-1. 打开微信公众号编辑器
-2. 直接粘贴（Ctrl+V）
-3. 格式将自动保持`);
+                        alert(`内容已复制到剪贴板!`);
                       } else {
                         alert("复制失败，请手动选择内容复制");
                       }

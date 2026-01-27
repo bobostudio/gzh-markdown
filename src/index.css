@@ -6,11 +6,19 @@
 .markdown-preview {
   /* 确保在微信公众号中的字体显示 */
   font-family:
-    -apple-system, BlinkMacSystemFont, "Helvetica Neue", "PingFang SC",
-    "Hiragino Sans GB", "Microsoft YaHei UI", "Microsoft YaHei", Arial,
+    "Charter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Helvetica Neue",
+    "PingFang SC",
+    "Hiragino Sans GB",
+    "Microsoft YaHei UI",
+    "Microsoft YaHei",
+    Arial,
     sans-serif;
   line-height: 1.6;
   color: #333;
+  background-color: #fbf9f6 !important;
 }
 
 .markdown-preview h1,
