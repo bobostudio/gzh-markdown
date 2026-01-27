@@ -5,7 +5,10 @@
 /* 微信公众号样式优化 */
 .markdown-preview {
   /* 确保在微信公众号中的字体显示 */
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei UI", "Microsoft YaHei", Arial, sans-serif;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Helvetica Neue", "PingFang SC",
+    "Hiragino Sans GB", "Microsoft YaHei UI", "Microsoft YaHei", Arial,
+    sans-serif;
   line-height: 1.6;
   color: #333;
 }
@@ -118,9 +121,9 @@
 
 /* 微信公众号样式主题 */
 .theme-wechat {
-  --primary-color: #07C160;
-  --secondary-color: #576B95;
-  --accent-color: #FA9D3B;
+  --primary-color: #07c160;
+  --secondary-color: #576b95;
+  --accent-color: #fa9d3b;
   --text-color: #333;
   --bg-color: #fff;
   --bg-secondary: #f9f9f9;
@@ -132,64 +135,66 @@
 }
 
 .theme-elegant {
-  --primary-color: #8B5CF6;
-  --secondary-color: #A78BFA;
-  --accent-color: #C4B5FD;
+  --primary-color: #8b5cf6;
+  --secondary-color: #a78bfa;
+  --accent-color: #c4b5fd;
   --text-color: #374151;
-  --bg-color: #F9FAFB;
-  --bg-secondary: #F3F4F6;
-  --code-bg: #F9FAFB;
-  --code-color: #DC2626;
-  --pre-bg: #1F2937;
-  --pre-color: #F9FAFB;
-  --border-color: #E5E7EB;
+  --bg-color: #f9fafb;
+  --bg-secondary: #f3f4f6;
+  --code-bg: #f9fafb;
+  --code-color: #dc2626;
+  --pre-bg: #1f2937;
+  --pre-color: #f9fafb;
+  --border-color: #e5e7eb;
 }
 
 .theme-tech {
-  --primary-color: #3B82F6;
-  --secondary-color: #60A5FA;
-  --accent-color: #93C5FD;
-  --text-color: #1F2937;
-  --bg-color: #F8FAFC;
-  --bg-secondary: #F0F9FF;
-  --code-bg: #EFF6FF;
-  --code-color: #DC2626;
-  --pre-bg: #0F172A;
-  --pre-color: #E2E8F0;
-  --border-color: #E2E8F0;
+  --primary-color: #3b82f6;
+  --secondary-color: #60a5fa;
+  --accent-color: #93c5fd;
+  --text-color: #1f2937;
+  --bg-color: #f8fafc;
+  --bg-secondary: #f0f9ff;
+  --code-bg: #eff6ff;
+  --code-color: #dc2626;
+  --pre-bg: #0f172a;
+  --pre-color: #e2e8f0;
+  --border-color: #e2e8f0;
 }
 
 .theme-minimal {
-  --primary-color: #6B7280;
-  --secondary-color: #9CA3AF;
-  --accent-color: #D1D5DB;
+  --primary-color: #6b7280;
+  --secondary-color: #9ca3af;
+  --accent-color: #d1d5db;
   --text-color: #374151;
-  --bg-color: #FFFFFF;
-  --bg-secondary: #F9FAFB;
-  --code-bg: #F3F4F6;
-  --code-color: #6B7280;
+  --bg-color: #ffffff;
+  --bg-secondary: #f9fafb;
+  --code-bg: #f3f4f6;
+  --code-color: #6b7280;
   --pre-bg: #374151;
-  --pre-color: #F9FAFB;
-  --border-color: #E5E7EB;
+  --pre-color: #f9fafb;
+  --border-color: #e5e7eb;
 }
 
 .theme-claude {
-  --primary-color: #D97706;
-  --secondary-color: #F59E0B;
-  --accent-color: #FCD34D;
-  --text-color: #1F2937;
-  --bg-color: #FFFBEB;
-  --bg-secondary: #FEF3C7;
-  --code-bg: #FEF3C7;
-  --code-color: #92400E;
-  --pre-bg: #1F2937;
-  --pre-color: #F9FAFB;
-  --border-color: #F59E0B;
+  --primary-color: #d4a574;
+  --secondary-color: #e8c9a0;
+  --accent-color: #f5deb3;
+  --text-color: #2d2926;
+  --bg-color: #fffef9;
+  --bg-secondary: #fbf9f6;
+  --code-bg: #fbf9f6;
+  --code-color: #8b6f47;
+  --pre-bg: #2d2926;
+  --pre-color: #f5deb3;
+  --border-color: #d4a574;
 }
 
 /* Markdown 预览样式 */
 .markdown-preview {
-  font-family: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif;
+  font-family:
+    "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei",
+    sans-serif;
   line-height: 1.75;
   color: var(--text-color, #333);
   background-color: var(--bg-color, #fff);
@@ -201,7 +206,7 @@
 .markdown-preview h4,
 .markdown-preview h5,
 .markdown-preview h6 {
-  color: var(--primary-color, #07C160);
+  color: var(--primary-color, #07c160);
   font-weight: 600;
   margin: 1.5em 0 0.8em 0;
   line-height: 1.4;
@@ -209,13 +214,13 @@
 
 .markdown-preview h1 {
   font-size: 1.8em;
-  border-bottom: 2px solid var(--primary-color, #07C160);
+  border-bottom: 2px solid var(--primary-color, #07c160);
   padding-bottom: 0.3em;
 }
 
 .markdown-preview h2 {
   font-size: 1.5em;
-  border-left: 4px solid var(--primary-color, #07C160);
+  border-left: 4px solid var(--primary-color, #07c160);
   padding-left: 0.8em;
 }
 
@@ -229,7 +234,7 @@
 }
 
 .markdown-preview blockquote {
-  border-left: 4px solid var(--accent-color, #FA9D3B);
+  border-left: 6px solid var(--accent-color, #fa9d3b);
   background-color: var(--bg-secondary, #f9f9f9);
   padding: 1em 1.2em;
   margin: 1.5em 0;
@@ -238,7 +243,7 @@
 
 .markdown-preview blockquote p {
   margin: 0;
-  color: var(--secondary-color, #576B95);
+  color: var(--secondary-color, #576b95);
   font-style: italic;
 }
 
@@ -247,7 +252,7 @@
   color: var(--code-color, #e74c3c);
   padding: 0.2em 0.4em;
   border-radius: 3px;
-  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+  font-family: "Consolas", "Monaco", "Courier New", monospace;
   font-size: 0.9em;
 }
 
@@ -285,7 +290,7 @@
 
 .markdown-preview ul li::before {
   content: "•";
-  color: var(--primary-color, #07C160);
+  color: var(--primary-color, #07c160);
   font-weight: bold;
   position: absolute;
   left: -1em;
@@ -311,7 +316,7 @@
 }
 
 .markdown-preview th {
-  background-color: var(--primary-color, #07C160);
+  background-color: var(--primary-color, #07c160);
   color: white;
   font-weight: 600;
 }
@@ -331,28 +336,33 @@
 .markdown-preview hr {
   border: none;
   height: 2px;
-  background: linear-gradient(to right, transparent, var(--primary-color, #07C160), transparent);
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--primary-color, #07c160),
+    transparent
+  );
   margin: 2em 0;
 }
 
 .markdown-preview a {
-  color: var(--primary-color, #07C160);
+  color: var(--primary-color, #07c160);
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: border-bottom-color 0.2s;
 }
 
 .markdown-preview a:hover {
-  border-bottom-color: var(--primary-color, #07C160);
+  border-bottom-color: var(--primary-color, #07c160);
 }
 
 .markdown-preview strong {
-  color: var(--primary-color, #07C160);
+  color: var(--primary-color, #07c160);
   font-weight: 600;
 }
 
 .markdown-preview em {
-  color: var(--secondary-color, #576B95);
+  color: var(--secondary-color, #576b95);
   font-style: italic;
 }
 
@@ -373,10 +383,10 @@
 }
 
 .markdown-preview::-webkit-scrollbar-thumb {
-  background: var(--primary-color, #07C160);
+  background: var(--primary-color, #07c160);
   border-radius: 3px;
 }
 
 .markdown-preview::-webkit-scrollbar-thumb:hover {
-  background: var(--secondary-color, #576B95);
+  background: var(--secondary-color, #576b95);
 }
