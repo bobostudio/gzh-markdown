@@ -5,6 +5,7 @@ import MarkdownPreview from "./components/MarkdownPreview";
 import ThemeSelector from "./components/ThemeSelector";
 import LayoutSelector from "./components/LayoutSelector";
 import { Theme, Layout } from "./types";
+import { copyToWeChat } from "./utils/copy";
 
 const defaultMarkdown = `# 微信公众号标题
 
@@ -44,25 +45,6 @@ function App() {
   const [theme, setTheme] = useState<Theme>("claude");
   const [layout, setLayout] = useState<Layout>("split");
   const [showPreview, setShowPreview] = useState(true);
-
-  const handleCopy = useCallback(async () => {
-    try {
-      const previewElement = document.querySelector(".markdown-preview");
-      if (previewElement) {
-        const range = document.createRange();
-        range.selectNodeContents(previewElement);
-        const selection = window.getSelection();
-        selection?.removeAllRanges();
-        selection?.addRange(range);
-        document.execCommand("copy");
-        selection?.removeAllRanges();
-        alert("内容已复制到剪贴板！");
-      }
-    } catch (err) {
-      console.error("复制失败:", err);
-      alert("复制失败，请手动选择内容复制");
-    }
-  }, []);
 
   const handleExport = useCallback(() => {
     const previewElement = document.querySelector(".markdown-preview");
@@ -134,7 +116,7 @@ function App() {
                         scale: 2,
                         useCORS: true,
                         allowTaint: true,
-                        backgroundColor: null,
+                        backgroundColor: "#fbf9f6",
                         width: previewElement.scrollWidth,
                         height: previewElement.scrollHeight,
                         windowWidth: previewElement.scrollWidth,
@@ -252,19 +234,12 @@ function App() {
                   const previewElement =
                     document.querySelector(".markdown-preview");
                   if (previewElement) {
-                    const range = document.createRange();
-                    range.selectNodeContents(previewElement);
-                    const selection = window.getSelection();
-                    if (selection) {
-                      selection.removeAllRanges();
-                      selection.addRange(range);
-                      const success = document.execCommand("copy");
-                      selection.removeAllRanges();
-                      if (success) {
-                        alert(`内容已复制到剪贴板!`);
-                      } else {
-                        alert("复制失败，请手动选择内容复制");
-                      }
+                    try {
+                      copyToWeChat(previewElement as HTMLElement);
+                      alert("内容已复制到剪贴板！\n请直接在微信公众号后台粘贴 (Ctrl+V)");
+                    } catch (error) {
+                      console.error("复制失败:", error);
+                      alert("复制失败，请重试");
                     }
                   }
                 }}
